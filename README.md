@@ -29,7 +29,7 @@ Additional files needed for compilation:
 
 ## Usage
 
-1. Download 'File-Converter.exe' from releases or click [https://github.com/xianglimjun/File-Converter/releases/tag/v1.0.0](URL)
+1. Download 'File-Converter.exe' from releases or click https://github.com/xianglimjun/File-Converter/releases/latest
 2. Run `File-Converter.exe` (or `run.bat`)
 3. Click "Select File"
 4. Choose target format
@@ -41,3 +41,4 @@ Additional files needed for compilation:
 - Microsoft 365 (Word/PowerPoint) for document conversion
 
 - Visual Studio 2022 (for building from source only)
+
