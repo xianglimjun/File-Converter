@@ -29,13 +29,15 @@ Additional files needed for compilation:
 
 ## Usage
 
-1. Run `converter.exe` (or `run.bat`)
-2. Click "Select File"
-3. Choose target format
-4. Click "Convert"
+1. Download 'File-Converter.exe' from releases or click [https://github.com/xianglimjun/File-Converter/releases/tag/v1.0.0](URL)
+2. Run `File-Converter.exe` (or `run.bat`)
+3. Click "Select File"
+4. Choose target format
+5. Click "Convert"
 
 ## Requirements
 
 - Windows 10/11
 - Microsoft 365 (Word/PowerPoint) for document conversion
+
 - Visual Studio 2022 (for building from source only)
