@@ -23,9 +23,18 @@ echo Found Visual Studio environment at: "%VS_PATH%"
 call "%VS_PATH%" x64
 
 :build
-echo Building...
+echo Building Universal File Converter V3...
+
+rem Paths to libwebp (headers in include/, lib files in lib/)
+set "WEBP_INC=libwebp\include"
+set "WEBP_LIB=libwebp\lib\libwebp.lib"
+
 rem /MT for static linking (portability), /O2 for optimization
-cl /nologo /MT /O2 main.c /Fe:converter.exe user32.lib gdi32.lib comdlg32.lib shell32.lib advapi32.lib
+rem /I for include paths
+cl /nologo /MT /O2 /I"%WEBP_INC%" main.c /Fe:File-Converter.exe ^
+    user32.lib gdi32.lib comdlg32.lib shell32.lib advapi32.lib ^
+    "%WEBP_LIB%"
+
 if %errorlevel% neq 0 (
     echo Build failed!
     pause
